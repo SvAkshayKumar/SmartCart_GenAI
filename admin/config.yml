@@ -7,22 +7,39 @@ media_folder: "assets/images"
 public_folder: "/assets/images"
 
 collections:
+  - name: "settings"
+    label: "Site Settings"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "general"
+        label: "General Settings"
+        file: "data/settings.json"
+        fields:
+          - {label: "Store Name", name: "store_name", widget: "string"}
+          - {label: "Contact Email", name: "contact_email", widget: "string"}
+          - {label: "Footer Text", name: "footer_text", widget: "string"}
+          - {label: "Announcement Bar", name: "announcement", widget: "string", required: false}
+
   - name: "products"
     label: "Products"
     folder: "data/products"
     create: true
     slug: "{{slug}}"
+    extension: json
+    format: json
     fields:
       - {label: "ID", name: "id", widget: "number"}
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Price", name: "price", widget: "number"}
       - {label: "Category", name: "category", widget: "select", options: ["Audio", "Wearables", "Drones", "Smart Home", "Gadgets"]}
-      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Image URL", name: "image", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Featured", name: "featured", widget: "boolean", default: false}
 
   - name: "pages"
-    label: "Pages"
+    label: "Pages Content"
     files:
       - file: "data/home.json"
         label: "Home Page"
@@ -33,10 +50,11 @@ collections:
           - {label: "Featured Header", name: "featured_header", widget: "string"}
 
   - name: "blog"
-    label: "Blog"
+    label: "Staff Blog / Updates"
     folder: "blog"
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Author", name: "author", widget: "string", default: "Admin"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}

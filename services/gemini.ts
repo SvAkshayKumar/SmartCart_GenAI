@@ -1,9 +1,6 @@
 
 import { GoogleGenAI, Type } from "@google/genai";
 
-// The API key is sourced from the environment variable API_KEY.
-// This service provides methods for AI-enhanced product features.
-
 const getAIClient = () => {
   return new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
 };
@@ -61,5 +58,18 @@ export const getAIRecommendations = async (allProducts: any[]) => {
   } catch (error) {
     console.error("Gemini Error:", error);
     return [];
+  }
+};
+
+export const getBusinessInsights = async (allProducts: any[]) => {
+  try {
+    const ai = getAIClient();
+    const response = await ai.models.generateContent({
+      model: "gemini-3-flash-preview",
+      contents: `You are a business consultant. Review this store inventory: ${JSON.stringify(allProducts)}. Provide 3 strategic insights for the store owner to increase sales. Keep it brief.`,
+    });
+    return response.text || "No insights available.";
+  } catch (error) {
+    return "AI consultant unavailable.";
   }
 };

@@ -28,6 +28,10 @@ const Layout: React.FC<LayoutProps> = ({ children, cartCount }) => {
     setIsMenuOpen(false);
   }, [location]);
 
+  // Don't show header/footer on staff dashboard if we want a clean look, 
+  // but usually it's better to keep it for navigation. 
+  // We'll keep it for now.
+
   return (
     <div className="min-h-screen flex flex-col">
       <header className="sticky top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
@@ -95,6 +99,11 @@ const Layout: React.FC<LayoutProps> = ({ children, cartCount }) => {
                 <span className="text-xl font-bold">SmartCart</span>
               </div>
               <p className="text-slate-500 dark:text-slate-400">Your one-stop destination for the latest and greatest in tech gadgets. AI-powered shopping experiences.</p>
+              <div className="mt-6">
+                <Link to="/staff/dashboard" className="text-xs font-medium text-slate-400 dark:text-slate-600 hover:text-primary-500 transition-colors uppercase tracking-widest">
+                  Staff Dashboard
+                </Link>
+              </div>
             </div>
             
             <div>

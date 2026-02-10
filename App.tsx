@@ -8,6 +8,7 @@ import ProductDetails from './pages/ProductDetails';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import Contact from './pages/Contact';
+import AdminDashboard from './pages/AdminDashboard';
 import { CartItem, Product } from './types';
 
 const App: React.FC = () => {
@@ -65,6 +66,7 @@ const App: React.FC = () => {
           <Route path="/cart" element={<Cart cart={cart} updateQuantity={updateQuantity} removeFromCart={removeFromCart} />} />
           <Route path="/checkout" element={<Checkout cart={cart} clearCart={clearCart} />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/staff/dashboard" element={<AdminDashboard products={products} />} />
         </Routes>
       </Layout>
     </Router>

@@ -53,5 +53,23 @@
     "image": "https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?auto=format&fit=crop&q=80&w=800",
     "description": "Track more than just weight. Get full body composition analysis including BMI, body fat percentage, and muscle mass directly to your app.",
     "featured": false
+  },
+  {
+    "id": 7,
+    "name": "Aura Smart Mirror",
+    "price": 599,
+    "category": "Smart Home",
+    "image": "https://images.unsplash.com/photo-1512499617640-c74ae3a49dd5?auto=format&fit=crop&q=80&w=800",
+    "description": "Transform your morning routine with Aura. An intelligent mirror that displays news, weather, and your fitness stats while you get ready.",
+    "featured": false
+  },
+  {
+    "id": 8,
+    "name": "Vortex VR Headset",
+    "price": 399,
+    "category": "Gadgets",
+    "image": "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?auto=format&fit=crop&q=80&w=800",
+    "description": "Step into the metaverse with Vortex. High-resolution optics and spatial audio deliver an unparalleled immersive virtual reality experience.",
+    "featured": true
   }
 ]
