@@ -1,0 +1,42 @@
+
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "products"
+    label: "Products"
+    folder: "data/products"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "ID", name: "id", widget: "number"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Price", name: "price", widget: "number"}
+      - {label: "Category", name: "category", widget: "select", options: ["Audio", "Wearables", "Drones", "Smart Home", "Gadgets"]}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Featured", name: "featured", widget: "boolean", default: false}
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "data/home.json"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - {label: "Hero Title", name: "hero_title", widget: "string"}
+          - {label: "Hero Subtitle", name: "hero_subtitle", widget: "text"}
+          - {label: "Featured Header", name: "featured_header", widget: "string"}
+
+  - name: "blog"
+    label: "Blog"
+    folder: "blog"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}

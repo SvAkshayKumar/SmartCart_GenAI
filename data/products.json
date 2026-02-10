@@ -1,0 +1,57 @@
+
+[
+  {
+    "id": 1,
+    "name": "ZenSonic Pro Headphones",
+    "price": 349,
+    "category": "Audio",
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=800",
+    "description": "Studio-grade wireless headphones with ultra-low latency and adaptive noise cancellation. Experience audio purity like never before with ZenSonic Pro.",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "name": "SkyGuard X-9 Drone",
+    "price": 1299,
+    "category": "Drones",
+    "image": "https://images.unsplash.com/photo-1473966968600-fa804b869620?auto=format&fit=crop&q=80&w=800",
+    "description": "Professional-grade cinematic drone with 4K HDR camera and 45-minute flight time. Equipped with AI obstacle avoidance and GPS tracking.",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "name": "Orbit Watch Series 5",
+    "price": 499,
+    "category": "Wearables",
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=800",
+    "description": "The ultimate health and productivity companion. Features 24/7 heart rate monitoring, blood oxygen sensing, and seamless smartphone integration.",
+    "featured": true
+  },
+  {
+    "id": 4,
+    "name": "Lumina Smart Hub",
+    "price": 199,
+    "category": "Smart Home",
+    "image": "https://images.unsplash.com/photo-1558002038-103792e0739d?auto=format&fit=crop&q=80&w=800",
+    "description": "Centralize your home automation with Lumina. Connect and control lights, thermostats, and security systems with intuitive touch or voice commands.",
+    "featured": false
+  },
+  {
+    "id": 5,
+    "name": "CyberPad Pro Tablet",
+    "price": 899,
+    "category": "Gadgets",
+    "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&q=80&w=800",
+    "description": "Ultra-thin powerful tablet designed for creators. features a 120Hz Liquid Retina display and the latest neural engine for peak performance.",
+    "featured": true
+  },
+  {
+    "id": 6,
+    "name": "PulseFit Smart Scale",
+    "price": 89,
+    "category": "Wearables",
+    "image": "https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?auto=format&fit=crop&q=80&w=800",
+    "description": "Track more than just weight. Get full body composition analysis including BMI, body fat percentage, and muscle mass directly to your app.",
+    "featured": false
+  }
+]

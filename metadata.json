@@ -1,0 +1,7 @@
+{
+  "name": "SmartCart – TechGadgets Store",
+  "description": "A cutting-edge, AI-enhanced static e-commerce platform for tech gadgets, featuring dynamic product management, local storage cart system, and Gemini-powered product insights.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
